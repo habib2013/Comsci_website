@@ -34,7 +34,7 @@
 {!! Form::open(['action' => ['PostsController@update',$post->id],'method'=>'PUT','enctype'=>'multipart/form-data']) !!}
 @csrf
 <div class="form-group">
- {{Form::label('caption','Caption')}}
+ {{Form::label('caption','CAPTION')}}
  {{Form::text('caption',$post->caption,['class'=>'form-control','placeholder'=>'Caption'])}}
  </div>
  <div class="form-group">
