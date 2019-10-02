@@ -78,11 +78,6 @@
                 <hr>
               </div>
               <div class="footer-advanced-aside">
-                <div class="container">
-                  <div class="footer-advanced-layout"><a class="brand" href="index.html"><img src="images/logo-inverse-small-230x43.png" alt="" width="230" height="43" srcset="images/logo-inverse-small-460x86.png 2x"/></a>
-                    <!-- Rights-->
-                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="#">Terms of Use</a><span> and</span><span>&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
-                  </div>
-                </div>
+              
               </div>
             </footer>

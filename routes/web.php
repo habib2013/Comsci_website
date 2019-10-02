@@ -28,6 +28,10 @@ Route::get('/showlist', 'CoursesController@showlist');
 Route::get('/home', 'CoursesController@showcourse');
 Route::resource('/course','CoursesController');
 
+Route::get('/contact', 'ContactsController@index');
+Route::post('/contact/store', 'ContactsController@store');
+
+
 //Route::get('/aboutme', 'HomeController@aboutme')->name('aboutme');
 Route::get('/test', 'HomeController@testfollow')->name('testfollow');
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
