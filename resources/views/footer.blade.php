@@ -4,26 +4,22 @@
                   <div class="row row-50">
                     <div class="col-lg-4">
                       <h4>About Us</h4>
-                      <p class="footer-advanced-text">Our university offers high-quality education to students inside and outside of the USA. Our aim is to support our students as they become highly employable, creative, and culturally rich graduates, with the capacity to find employment that will enable them to be agents for change in a connected world.</p>
+                      <p class="footer-advanced-text">The department of Computer Science is one of the foundation departments of the Kwara State University at its inception in 2009. The department took off during the 2009/2010 academic session with the mandate of running a four- year Bachelor degree in Computer Science (B.Sc.). The department started with a student population of 46 and academic staff strength of 3. The student population increased to 81 during 2010/2011 session, 147 in 2011/2012, 201 in 2012/2013 and 254 in 2013/2014. At present, the department has over five hundred students which cuts across both undergraduate and post graduate programmes</p>
                     </div>
                     <div class="col-sm-7 col-md-5 col-lg-4">
                       <h4>Recent Blog Posts</h4>
                       <!-- Post Inline-->
+                
                       <article class="post-inline">
-                        <p class="post-inline-title"><a href="single-blog-post.html">Studying in the United States: Top 10 Facts You Need to Know About</a></p>
+                        <p class="post-inline-title"><a href="#">No posts yet</a></p>
                         <ul class="post-inline-meta">
                           <li>by Theresa Barnes</li>
                           <li><a href="single-blog-post.html">2 days ago</a></li>
                         </ul>
                       </article>
+                   
                       <!-- Post Inline-->
-                      <article class="post-inline">
-                        <p class="post-inline-title"><a href="single-blog-post.html">10 Law Schools Where the Most Accepted Students Enroll</a></p>
-                        <ul class="post-inline-meta"> 
-                          <li>by Theresa Barnes</li>
-                          <li><a href="single-blog-post.html">2 days ago</a></li>
-                        </ul>
-                      </article>
+                 
                     </div>
                     <div class="col-sm-5 col-md-7 col-lg-4">
                       <h4>Our Gallery</h4>
@@ -54,12 +50,12 @@
                   <div class="footer-advanced-layout">
                     <div>
                       <ul class="list-nav"> 
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About</a></li>
-                        <li><a href="academics.html">Academics</a></li>
-                        <li><a href="grid-gallery.html">Gallery</a></li>
-                        <li><a href="grid-blog.html">Blog</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/teaching">Staff</a></li>
+                        <li><a href="grid-gallery.html">Research</a></li>
+                        <li><a href="grid-blog.html">News and Events</a></li>
+                        
                       </ul>
                     </div>
                     <div>

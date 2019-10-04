@@ -29,6 +29,16 @@ class HomeController extends Controller
         return view('aboutus');
     }
 
+    public function teaching()
+    {
+        return view('staff.teaching');
+    }
+
+    public function nonteaching()
+    {
+        return view('staff.nonteaching');
+    }
+
     public function testfollow(){
         return view('layouts.testfollow');
     }

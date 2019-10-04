@@ -112,24 +112,26 @@
                   </div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a>
+              
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/">Home</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="#">About Us</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{ route('about') }}">About us</a></li>
-                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Visit Us</a></li>
-                      </ul>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Undergraduate research</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Postgraduate research</a></li>
+                          </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="academics.html">Academics</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="academics.html">STAFF</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-academic.html">Undergraduate programs</a></li>
-                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-academic.html">Postgraduate programs</a></li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-academic.html">Courses</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/teaching">Teaching staff</a></li>
+                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/nonteaching">Non-teaching staff</a></li>
+                  
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">Faculty and research</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">research</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-blog.html">People</a></li>

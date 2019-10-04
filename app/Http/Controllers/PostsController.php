@@ -37,6 +37,16 @@ $imagepath = request('image')->store('uploads','public');
     return redirect('/profile/'.auth()->user()->id);
     }
 
+    public function viewall(){
+$post  = new \App\Post();
+$showpost = $post::all();
+
+
+        return view('posts.viewall',['showpost'=>$showpost]);
+    }
+
+
+
 public function update(Request $request,$post){
     
     $this->validate($request,[

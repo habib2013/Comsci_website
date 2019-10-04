@@ -93,18 +93,19 @@
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{ route('about') }}">About us</a></li>
-                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Visit Us</a></li>
-                      </ul>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Undergraduate research</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Postgraduate research</a></li>
+                         </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="academics.html">Academics</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="academics.html">STAFF</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-academic.html">Undergraduate programs</a></li>
-                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-academic.html">Postgraduate programs</a></li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-academic.html">Courses</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/teaching">Teaching staff</a></li>
+                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/nonteaching">Non-teaching staff</a></li>
+                  
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">Faculty and research</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">research</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-blog.html">People</a></li>
@@ -132,7 +133,7 @@
       <!-- Slider Light-->
       <section class="swiper-container swiper-slider swiper-slider-light context-dark" data-loop="true" data-autoplay="false" data-simulate-touch="false" data-custom-slide-effect="inter-leave-effect" data-inter-leave-offset="-.5">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" data-slide-bg="images/slider-slide-1-1920x776.jpg">
+          <div class="swiper-slide" data-slide-bg="images/2.jpg">
             <div class="slide-inner">
               <div class="container">
                 <div class="swiper-slide-caption">
@@ -172,12 +173,12 @@
         <div class="container">
           <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
             <div class="col-md-10 col-lg-6 col-xl-5">
-              <h3 class="wow-outer"><span class="wow slideInDown">A Few Words About Us</span></h3>
+              <h3 class="wow-outer"><span class="wow slideInDown">HOD's welcome note</span></h3>
               <p class="wow-outer" style="color: #000000"><span class="wow slideInDown" data-wow-delay=".05s">The Department of Computer Science is guided by its philosophy of producing global citizens that are well grounded in the knowledge and expertise of the theories and applications of computer science so as to cope with the dynamic information technology world and manpower needs of the society.</span></p>
               <p class="wow-outer"></p>
-              <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" data-wow-delay=".1s" href="about-us.html">Read more</a></div>
+              <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" data-wow-delay=".1s" href="/about">Read more</a></div>
             </div>
-            <div class="col-md-10 col-lg-6 wow-outer"><img class="img-responsive wow slideInLeft" src="images/2.jpg" alt="" width="570" height="368"/>
+            <div class="col-md-10 col-lg-6 wow-outer"><img class=" wow slideInLeft" src="images/lecturers/prof.png" alt="" style="height:250px;width:300px;border-radius:250px;padding-right:20px"/>
             </div>
           </div>
         </div>
@@ -218,7 +219,7 @@
       <!-- Team-->
       <section class="section section-lg bg-gray-100 text-center">
         <div class="container">
-          <h3 class="wow-outer text-center"><span class="wow slideInDown">Our Teachers</span></h3>
+          <h3 class="wow-outer text-center"><span class="wow slideInDown">Our Lecturers</span></h3>
           <div class="row row-50">
           @foreach($showuser as $user)
             <div class="col-sm-6 col-lg-4 wow-outer">
@@ -309,7 +310,7 @@
          @endforeach
           </div>
         </div>
-        <div class="wow-outer button-outer"><a class="button button-primary-outline button-winona wow slideInUp" href="grid-blog.html">View all Blog posts</a></div>
+        <div class="wow-outer button-outer"><a class="button button-primary-outline button-winona wow slideInUp" href="/viewall">View all Blog posts</a></div>
       </section>
       <!-- Contacts-->
       <section class="section bg-gray-100">

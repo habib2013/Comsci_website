@@ -27,10 +27,13 @@
         <div class="container">
           <div class="row row-50 justify-content-center justify-content-lg-between">
             <div class="col-md-10 col-lg-6">
-              <h3>A Few Words About Us</h3>
+              <h3>HOD's Welcome speech</h3>
             
-            <p>The Department of Computer Science is guided by its philosophy of producing global citizens that are well grounded in the knowledge and expertise of the theories and applications of computer science so as to cope with the dynamic information technology world and manpower needs of the society .</p>
-            <div class="group group-middle"><a class="button button-primary button-winona" href="#our-history" data-waypoint-to="#our-history">Our Mission</a><a class="button button-primary-outline button-winona" href="careers.html">Our Vision</a></div>
+            <p style="color:#000000">The Department of Computer Science is guided by its philosophy of producing global citizens that are well grounded in the knowledge and expertise of the theories and applications of computer science so as to cope with the dynamic information technology world and manpower needs of the society .</p>
+           <p style="color:#000000">To this end, the Department has recruited several experienced staff dedicated to their duties and always ready to mentor students. In addition, the Department is housed in a serene environment inside the College of Information and Communication building which provides a conducive avenue for teaching and learning. In all, the relationship between the staff and students of the Department, College and University is a very Cordial one.
+Your choice of this great Department can never be wrong as the Department has so much to offer. You are most welcome to the Department and I wish you success in your endeavours.
+</p>
+            <div class="group group-middle"><a class="button button-primary button-winona" href="#our_mission" data-waypoint-to="#our_mission">Our Mission</a><a class="button button-primary-outline button-winona" href="careers.html" data-waypoint-to="#our_vision">Our Vision</a></div>
           
             </div>
          
@@ -68,7 +71,7 @@
               <div class="timeline-classic-item-divider"></div>
               <div class="timeline-classic-item-main">
                 <p class="timeline-classic-item-title">2011/2012</p>
-                <p class="thumbnail-classic-item-subtitle">Albert Crawford University Introduces Distance Education for 90% of Degrees</p>
+                <p class="thumbnail-classic-item-subtitle">Computer science department Introduced Distance Education for 90% of Degrees</p>
               </div>
             </div>
 
@@ -86,138 +89,34 @@
         </div>
       </section>
       
-
+      <section class="section section-lg" id="our_mission">
+        <div class="container">
+          <div class="row row-50 justify-content-center justify-content-lg-between">
+            <div class="col-md-10 col-lg-6">
+              <h3>Our Misssion</h3>
+            
+            <h5>The missions of the department are</h5>
+            <p>•	To create in students the awareness of and enthusiasm for computer science and its capabilities</p>
+          <p>•	To provide students with knowledge and skills base for further studies in computer science or multi-disciplinary studies involving computer science</p>  
+        <p>•	To develop in students through an education in computer science a range of transferable applicable skills of information technology to all aspects of human endeavours</p> 
+      <p>•	To generate in students an appreciation of the importance of computer in an industrial, economics, technological and social context.</p>  
+      </div>
+         
+            <div class="col-md-10 col-lg-6" id="our_vision">
+            <h1>Our Vision</h1>
+            
+           <h3 style="color:black"> To be a world class training centre for computer scientists that will be self starting, dynamic, team player and entrepreneurial. </h3>
+          </div>
+          </div>
+        </div>
+      </section>
       
       <!-- Who We Are-->
-      <section class="section section-lg section-last text-center">
-        <div class="container">
-          <h3>Who We Are</h3>
-          <div class="row row-50">
-            <div class="col-sm-6 col-lg-4">
-              <!-- Profile Minimal-->
-              <article class="profile-minimal"><img class="profile-minimal-image" src="images/team-1-370x368.jpg" alt="" width="370" height="368"/>
-                <div class="profile-minimal-caption">
-                  <h4 class="profile-minimal-title">Jean Thompson</h4>
-                  <p class="profile-minimal-position">Psychology</p>
-                </div>
-              </article>
-            </div>
-         
-            
-            <div class="col-sm-6 col-lg-4">
-              <!-- Profile Minimal-->
-              <article class="profile-minimal"><img class="profile-minimal-image" src="images/team-3-370x368.jpg" alt="" width="370" height="368"/>
-                <div class="profile-minimal-caption">
-                  <h4 class="profile-minimal-title">Polly Tucker</h4>
-                  <p class="profile-minimal-position">Graphic Design</p>
-                </div>
-              </article>
-            </div>
-         
-          
-          </div>
-        </div>
-      </section>
+    
       <!-- Latest News-->
-      <section class="section section-lg">
-        <div class="container">
-          <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
-            <div class="col-lg-6 col-xl-5">
-              <div class="inset-right-3">
-                <h3>About Undergraduate Study</h3>
-                <h5>Fusce bibendum, augue non mattis blandit, nisl orci rhoncus arcu, eget volutpat mauris arcu quis justo.</h5>
-                <p>Nam condimentum ligula dolor, ut eleifend sapien molestie at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed auctor mi sed odio vulputate, tincidunt pellentesque nisi rhoncus.</p><a class="button button-lg button-primary button-winona" href="#">Learn more</a>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="d3-chart-wrap">
-                <div class="d3-chart" id="line-chart"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section-xs bg-primary text-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-sm-10 col-md-12">
-              <div class="box-cta-thin">
-                <h4 class="wow-outer"><span class="wow slideInRight">Join our large growing community <span class="font-weight-bold"> with experienced professionals</span> Right Now!</span></h4>
-                <div class="wow-outer button-outer"><a class="button button-primary button-winona wow slideInLeft" href="#">Join Now!!</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
       <!-- Page Footer-->
-            <footer class="section footer-advanced bg-gray-800">
-              <div class="footer-advanced-main">
-                <div class="container">
-                  <div class="row row-50">
-                    <div class="col-lg-4">
-                      <h4>About Us</h4>
-                      <p class="footer-advanced-text">Our university offers high-quality education to students inside and outside of the USA. Our aim is to support our students as they become highly employable, creative, and culturally rich graduates, with the capacity to find employment that will enable them to be agents for change in a connected world.</p>
-                    </div>
-                    <div class="col-sm-7 col-md-5 col-lg-4">
-                      <h4>Recent Blog Posts</h4>
-                      <!-- Post Inline-->
-                      <article class="post-inline">
-                        <p class="post-inline-title"><a href="single-blog-post.html">Studying in the United States: Top 10 Facts You Need to Know About</a></p>
-                        <ul class="post-inline-meta">
-                          <li>by Theresa Barnes</li>
-                          <li><a href="single-blog-post.html">2 days ago</a></li>
-                        </ul>
-                      </article>
-                      <!-- Post Inline-->
-                      <article class="post-inline">
-                        <p class="post-inline-title"><a href="single-blog-post.html">10 Law Schools Where the Most Accepted Students Enroll</a></p>
-                        <ul class="post-inline-meta"> 
-                          <li>by Theresa Barnes</li>
-                          <li><a href="single-blog-post.html">2 days ago</a></li>
-                        </ul>
-                      </article>
-                    </div>
-                  
-                  </div>
-                </div>
-              </div>
-              <div class="footer-advanced-aside">
-                <div class="container">
-                  <div class="footer-advanced-layout">
-                    <div>
-                      <ul class="list-nav"> 
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About</a></li>
-                        <li><a href="academics.html">Academics</a></li>
-                        <li><a href="grid-gallery.html">Gallery</a></li>
-                        <li><a href="grid-blog.html">Blog</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <ul class="list-inline list-inline-md">
-                        <li><a class="icon icon-sm link-default mdi mdi-facebook" href="#"></a></li>
-                        <li><a class="icon icon-sm link-default mdi mdi-twitter" href="#"></a></li>
-                        <li><a class="icon icon-sm link-default mdi mdi-instagram" href="#"></a></li>
-                        <li><a class="icon icon-sm link-default mdi mdi-google" href="#"></a></li>
-                        <li><a class="icon icon-sm link-default mdi mdi-linkedin" href="#"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container">
-                <hr>
-              </div>
-              <div class="footer-advanced-aside">
-                <div class="container">
-                  <div class="footer-advanced-layout"><a class="brand" href="index.html"><img src="images/logo-inverse-small-230x43.png" alt="" width="230" height="43" srcset="images/logo-inverse-small-460x86.png 2x"/></a>
-                    <!-- Rights-->
-                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="#">Terms of Use</a><span> and</span><span>&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
-                  </div>
-                </div>
-              </div>
-            </footer>
+         @include('footer')
     </div>
     <div class="preloader"> 
       <div class="preloader-logo"><img src="images/logo-default-317x71.png" alt="" width="317" height="71" srcset="images/logo-default-551x124.png 2x"/>

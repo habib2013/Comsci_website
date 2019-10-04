@@ -21,6 +21,10 @@ Auth::routes();
 Route::get('/p', 'PostsController@create')->name('createpost');
 Route::get('/p/{post}', 'PostsController@show');
 Route::post('/p/store', 'PostsController@store');
+Route::get('/showfooter', 'PostsController@showinfooter');
+
+
+Route::get('/viewall', 'PostsController@viewall');
 
 Route::get('/about', 'HomeController@about')->name('about');
 Route::get('/', 'CoursesController@showcourse');
@@ -34,6 +38,9 @@ Route::post('/contact/store', 'ContactsController@store');
 
 //Route::get('/aboutme', 'HomeController@aboutme')->name('aboutme');
 Route::get('/test', 'HomeController@testfollow')->name('testfollow');
+Route::get('/teaching', 'HomeController@teaching');
+Route::get('/nonteaching', 'HomeController@nonteaching');
+
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 
 Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit');
