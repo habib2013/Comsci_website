@@ -35,7 +35,8 @@
                 <div class="section-lg">
                   <h3 class="wow-outer"><span class="wow slideInDown">Contact Us</span></h3>
                   <!-- RD Mailform-->
-                  <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="/contact/store">
+                  <form class="rd-form rd-mailform"  method="post" action="/contact/store">
+                  {{ csrf_field() }}
                     <div class="row row-10">
                       <div class="col-md-6 wow-outer">
                         <div class="form-wrap wow fadeSlideInUp">
@@ -70,8 +71,8 @@
                     </div>
                     <div class="group group-middle">
                       <div class="wow-outer"> 
-                       <input type="submit" value="submit">
-                          </div>
+                        <button type="submit">Send a message</button>
+                      </div>
                    
                              </div>
                   </form>
