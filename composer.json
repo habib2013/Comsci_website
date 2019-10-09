@@ -15,6 +15,7 @@
         "laravel/telescope": "^2.1",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.4.0",
+        "silviolleite/laravelpwa": "^1.0",
         "unisharp/laravel-ckeditor": "^4.7"
     },
     "require-dev": {
