@@ -55,6 +55,9 @@ class CoursesController extends Controller
       if(empty(auth()->user()->id)){
         return view('errors.403');
       }
+      if (auth()->user()->usertype =="Student") {
+        return view('errors.403');
+      }
       return view('courses.addcourse');
     }
 
@@ -133,7 +136,9 @@ class CoursesController extends Controller
      */
     public function edit(Course $course,User $user)
     {
-   
+      if (auth()->user()->usertype =="Student") {
+        return view('errors.403');
+      }
       if(empty(auth()->user()->id)){
         return view('errors.403');
       }
