@@ -29,85 +29,23 @@
           <article class="blog-layout">
             <div class="blog-layout-main">
               <div class="row row-50 row-xxl-70">
+
+@foreach($viewuser as $viewer)              
                 <div class="col-sm-6">
                   <!-- Post Classic-->
-                  <article class="post-classic"><a class="post-classic-media" href="single-blog-post.html"><img src="images/sidebar-blog-1-370x264.jpg" alt="" width="370" height="264"/></a>
+                  <article class="post-classic"><a class="post-classic-media" href="/profile/{{$viewer->id}}"><img src="{{$viewer->profile->profileImage()}}" alt="" max-width="370" max-height="264"/></a>
                     <ul class="post-classic-meta">
-                      <li><a class="button-winona" href="#">News</a></li>
                       <li>
-                        <time datetime="2018">Apr 21, 2018 at 12:05 pm</time>
+             
                       </li>
                     </ul>
-                    <h4 class="post-classic-title"><a href="single-blog-post.html">Liberal Arts Colleges Rankings</a></h4>
+                    <h4 class="post-classic-title"><a href="/profile/{{$viewer->id}}">{{$viewer->fullname}}</a></h4>
                   </article>
                 </div>
-                <div class="col-sm-6">
-                  <!-- Post Classic-->
-                  <article class="post-classic"><a class="post-classic-media" href="single-blog-post.html"><img src="images/sidebar-blog-2-370x264.jpg" alt="" width="370" height="264"/></a>
-                    <ul class="post-classic-meta">
-                      <li><a class="button-winona" href="#">Advertising</a></li>
-                      <li>
-                        <time datetime="2018">Apr 21, 2018 at 12:05 pm</time>
-                      </li>
-                    </ul>
-                    <h4 class="post-classic-title"><a href="single-blog-post.html">5 Ways to Pay for Community College</a></h4>
-                  </article>
-                </div>
-                <div class="col-sm-6">
-                  <!-- Post Classic-->
-                  <article class="post-classic"><a class="post-classic-media" href="single-blog-post.html"><img src="images/sidebar-blog-3-370x264.jpg" alt="" width="370" height="264"/></a>
-                    <ul class="post-classic-meta">
-                      <li><a class="button-winona" href="#">News</a></li>
-                      <li>
-                        <time datetime="2018">Apr 21, 2018 at 12:05 pm</time>
-                      </li>
-                    </ul>
-                    <h4 class="post-classic-title"><a href="single-blog-post.html">Why International Students Come to the USA</a></h4>
-                  </article>
-                </div>
-                <div class="col-sm-6">
-                  <!-- Post Classic-->
-                  <article class="post-classic"><a class="post-classic-media" href="single-blog-post.html"><img src="images/sidebar-blog-4-370x264.jpg" alt="" width="370" height="264"/></a>
-                    <ul class="post-classic-meta">
-                      <li><a class="button-winona" href="#">News</a></li>
-                      <li>
-                        <time datetime="2018">Apr 21, 2018 at 12:05 pm</time>
-                      </li>
-                    </ul>
-                    <h4 class="post-classic-title"><a href="single-blog-post.html">Consider MBA Programs That Offer Summer Prep</a></h4>
-                  </article>
-                </div>
-                <div class="col-sm-6">
-                  <!-- Post Classic-->
-                  <article class="post-classic"><a class="post-classic-media" href="single-blog-post.html"><img src="images/sidebar-blog-5-370x264.jpg" alt="" width="370" height="264"/></a>
-                    <ul class="post-classic-meta">
-                      <li><a class="button-winona" href="#">News</a></li>
-                      <li>
-                        <time datetime="2018">Apr 21, 2018 at 12:05 pm</time>
-                      </li>
-                    </ul>
-                    <h4 class="post-classic-title"><a href="single-blog-post.html">10 Law Schools Where the Most Accepted Students Enroll</a></h4>
-                  </article>
-                </div>
-                <div class="col-sm-6">
-                  <!-- Post Classic-->
-                  <article class="post-classic"><a class="post-classic-media" href="single-blog-post.html"><img src="images/sidebar-blog-6-370x264.jpg" alt="" width="370" height="264"/></a>
-                    <ul class="post-classic-meta">
-                      <li><a class="button-winona" href="#">News</a></li>
-                      <li>
-                        <time datetime="2018">Apr 21, 2018 at 12:05 pm</time>
-                      </li>
-                    </ul>
-                    <h4 class="post-classic-title"><a href="single-blog-post.html">Ways Parents Can Help Students Earn Scholarships</a></h4>
-                  </article>
-                </div>
+                @endforeach
+            
               </div>
-              <div class="pagination">
-                <div class="page-item active"><a class="page-link button-winona" href="#">1</a></div>
-                <div class="page-item"><a class="page-link button-winona" href="#">2</a></div>
-                <div class="page-item"><a class="page-link button-winona" href="#">3</a></div>
-                <div class="page-item"><a class="page-link button-winona" href="#">4</a></div>
-              </div>
+             
             </div>
             <div class="blog-layout-aside">
               <div class="blog-layout-aside-item">

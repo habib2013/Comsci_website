@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
+    @laravelPWA
     <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,700,800%7COswald:300,400,500">
@@ -34,7 +35,7 @@
                 <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="form-group row">
+                        <div class="form-group row" style="margin-top:20px">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
 
                             <div class="col-md-6">
@@ -50,7 +51,7 @@
 
 
                         
-                        <div class="form-group row">
+                        <div class="form-group row" style="margin-top:20px">
                             <label for="fullname" class="col-md-4 col-form-label text-md-right">{{ __('Full Name') }}</label>
 
                             <div class="col-md-6">
@@ -64,7 +65,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row" style="margin-top:20px">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
@@ -78,7 +79,24 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row" style="margin-top:20px">
+                            <label for="usertype" class="col-md-4 col-form-label text-md-right">Usertype</label>
+
+                            <div class="col-md-6">
+                                  <select name="usertype" class="form-control">
+                                  <option value="Lecturer">Lecturer</option>
+                                  <option value="Student">Student</option>
+                                  <option value="Admin">Administrator</option>
+                                  </select>
+                                @error('usertype')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row" style="margin-top:20px">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
@@ -92,7 +110,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row" style="margin-top:20px">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">

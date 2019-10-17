@@ -33,7 +33,8 @@ class CoursesController extends Controller
 
         //Defining users from user model
         $user = new \App\User();
-         $showuser =  $user::all()->take(3);
+         $showuser =  $user::all()->where('usertype','Lecturer')->take(3);
+         $showstudent =  $user::all()->where('usertype','Student');
 
         $datapost = $post::all()->take(2);
 
@@ -42,7 +43,7 @@ class CoursesController extends Controller
 
             return view('welcome',
             [
-                'datacourse'=>$datacourse,'datapost'=>$datapost,'showuser'=>$showuser
+                'datacourse'=>$datacourse,'datapost'=>$datapost,'showuser'=>$showuser,'showstudent'=>$showstudent
             ]);
 
      }

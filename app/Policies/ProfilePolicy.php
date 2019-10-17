@@ -58,6 +58,12 @@ class ProfilePolicy
     
     }
 
+public function checker(User $user,Profile $profile){
+//   $checker =   $user::all()->where('usertype','Lecturer');
+//   return $checker;
+
+} 
+
     /**
      * Determine whether the user can delete the profile.
      *

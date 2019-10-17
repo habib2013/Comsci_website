@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\User;
 
 class HomeController extends Controller
 {
@@ -31,12 +32,21 @@ class HomeController extends Controller
 
     public function teaching()
     {
-        return view('staff.teaching');
+            $user = new \App\User();
+        $viewuser =   $user::all()->where('usertype','Lecturer');
+        //   dd($viewuser);
+        return view('staff.teaching',['viewuser'=>$viewuser]);
     }
+
+
+
 
     public function nonteaching()
     {
-        return view('staff.nonteaching');
+        $user = new \App\User();
+        $viewuser =   $user::all()->where('usertype','Lecturer');
+        //   dd($viewuser);
+        return view('staff.nonteaching',['viewuser'=>$viewuser]);
     }
 
     public function testfollow(){

@@ -36,7 +36,7 @@
           <div class="container breadcrumbs-custom-container">
             <div class="breadcrumbs-custom-main">
               <h6 class="breadcrumbs-custom-subtitle title-decorated">About</h6>
-              <h4 class="breadcrumbs-custom-title"> Welcome {{$user->name}} </h4>
+              <h4 class="breadcrumbs-custom-title">  {{$user->name}}'s profile </h4>
             </div>
             <ul class="breadcrumbs-custom-path">
               <li><a href="index.html">Home</a></li>
@@ -66,7 +66,10 @@
                   <div class="group group-xs group-middle">
                   @can('update',$user->profile)
                   <a class="" href="/p">Add new post</a><br>
-                  <a class="" href="/course/create">Add new Course</a>
+                  @if( Auth::user()->usertype == "Lecturer")
+<a class="" href="/course/create">Add new Course</a>
+          @endif
+         
                   @endcan
                   </div>
                 
@@ -121,7 +124,7 @@
         
        
       </section>
-
+      @if( Auth::user()->usertype == "Lecturer")
       <section class="section section-lg text-center">
         <div class="container">
           <h3>{{$user->name}}’s Course(s)</h3>
@@ -147,8 +150,11 @@
        
       </section>
 
+@endif
 
+@if( Auth::user()->usertype == "Student")
 
+@endif
 
       <!-- Page Footer-->
         @include('footer')

@@ -6,6 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    @laravelPWA
     <meta charset="utf-8">
    <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,700,800%7COswald:300,400,500">
@@ -28,22 +29,31 @@
       <header class="section page-header">
         <!-- RD Navbar-->
        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+       <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
             <div class="rd-navbar-aside-outer">
               <div class="rd-navbar-aside">
                 <!-- RD Navbar Panel-->
                 <div class="rd-navbar-panel">
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="images/logo-default-317x71.png" alt="" width="317" height="71" srcset="images/logo-default-551x124.png 2x"/></a>
+                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="{{asset('images/logo-default-317x71.png')}}" alt="" width="317" height="71" srcset="images/logo-default-551x124.png 2x"/></a>
                 </div>
                 <div class="rd-navbar-collapse">
                   <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
                   <div class="rd-navbar-collapse-content" id="rd-navbar-collapse-content-1">
-                  @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                    <li class="nav-item dropdown">
+                  <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
@@ -55,7 +65,7 @@
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <a class="dropdown-item" href="/profile/{{ Auth::user()->id }}"
+                                    <a class="dropdown-item" href="/profile/{{Auth::user()->id}}"
                                     >
                                         {{ __('My profile') }}
                                     </a>
@@ -65,15 +75,8 @@
                                     </form>
                                 </div>
                             </li>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                        &nbsp;<a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+                        @endguest
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -87,17 +90,25 @@
                   </div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">About Us</a>
+                  <li class="rd-nav-item"><a href="/" class="rd-nav-link" ><b>HOME</b></a>
                       <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{ route('about') }}">About us</a></li>
-                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Undergraduate research</a></li>
-                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Postgraduate research</a></li>
-                         </ul>
+  
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="academics.html">STAFF</a>
+                  
+                    <li class="rd-nav-item"><a href="/about" class="rd-nav-link" ><b>ABOUT US</b></a>
+                      <!-- RD Navbar Dropdown-->
+  
+                    </li>
+
+
+                    <li class="rd-nav-item"><a href="/showlist" class="rd-nav-link" ><b>OUR COURSES</b></a>
+                      <!-- RD Navbar Dropdown-->
+  
+                    </li>
+
+                    <li class="rd-nav-item"><a href="#" class="rd-nav-link" ><b>STAFF</b></a>
+                      <!-- RD Navbar Dropdown-->
+  
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/teaching">Teaching staff</a></li>
@@ -105,24 +116,20 @@
                   
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">research</a>
+                
+                    <li class="rd-nav-item"><a href="#" class="rd-nav-link" ><b>NEWS & EVENTS</b></a>
+                      <!-- RD Navbar Dropdown-->
+  
+                    
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-blog.html">People</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="sidebar-blog.html">Research interest</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-blog-post.html">Undergraduate research</a></li>
-                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-blog-post.html">Scholarships</a></li>
-                      </ul>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">News and events</a>
-                      <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">Calendar and Colloquia</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">Examination updates</a></li>
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="masonry-gallery.html">Media</a></li>
                        
                       </ul>
                     </li>
                   
+
                   </ul>
                 </div>
               </div>
@@ -133,7 +140,7 @@
       <!-- Slider Light-->
       <section class="swiper-container swiper-slider swiper-slider-light context-dark" data-loop="true" data-autoplay="false" data-simulate-touch="false" data-custom-slide-effect="inter-leave-effect" data-inter-leave-offset="-.5">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" data-slide-bg="images/2.jpg">
+          <div class="swiper-slide" data-slide-bg="images/dsc.jpg">
             <div class="slide-inner">
               <div class="container">
                 <div class="swiper-slide-caption">
@@ -178,7 +185,7 @@
               <p class="wow-outer"></p>
               <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" data-wow-delay=".1s" href="/about">Read more</a></div>
             </div>
-            <div class="col-md-10 col-lg-6 wow-outer"><img class=" wow slideInLeft" src="images/lecturers/prof.png" alt="" style="height:250px;width:300px;border-radius:250px;padding-right:20px"/>
+            <div class="col-md-10 col-lg-6 wow-outer"><img class=" wow slideInLeft" src="images/lecturers/lecturer.png" alt="" style="height:200px;width:250px;border-radius:250px;padding-right:20px"/>
             </div>
           </div>
         </div>
@@ -221,6 +228,8 @@
         <div class="container">
           <h3 class="wow-outer text-center"><span class="wow slideInDown">Our Lecturers</span></h3>
           <div class="row row-50">
+@if(count($showuser) > 0)
+
           @foreach($showuser as $user)
             <div class="col-sm-6 col-lg-4 wow-outer">
               <!-- Profile Minimal-->
@@ -230,6 +239,18 @@
               </article>
             </div>
         @endforeach
+
+        @endif
+     
+     @if(count($showuser) == 0)
+
+     <section class="section section-lg bg-gray-100 text-center" >
+     <h3 style="float:center;padding-left:450px">No Lecturer available</h3>
+   
+
+     </section>
+
+     @endif
           </div>
         </div>
       </section>
@@ -254,7 +275,7 @@
               <article class="counter-minimal">
                 <div class="icon icon-md icon-modern mdi mdi-security-network"></div>
                 <div class="counter-minimal-main">
-                  <div class="counter">{{$showuser->count()}}</div><span></span>
+                  <div class="counter">{{$showstudent->count()}}</div><span></span>
                 </div>
                 <h5 class="counter-minimal-title">Student(s)</h5>
               </article>
@@ -291,6 +312,8 @@
         <div class="container">
           <h3 class="wow-outer text-center"><span class="wow slideInDown">Latest Blog Posts</span></h3>
           <div class="row row-50">
+
+     @if(count($datapost) > 0)
           @foreach($datapost as $post)
             <div class="col-md-6 wow-outer">
               <!-- Post Modern-->       
@@ -308,19 +331,31 @@
               </article>
             </div>
          @endforeach
+@endif
+
+@if(count($datapost)== 0)
+<h3 style="margin-left:400px">No blog post available</h3>
+
+@endif
+
+
+
+
+
+
           </div>
         </div>
         <div class="wow-outer button-outer"><a class="button button-primary-outline button-winona wow slideInUp" href="/viewall">View all Blog posts</a></div>
       </section>
-      <!-- Contacts-->
-      <section class="section bg-gray-100">
+      <!-- Contacts will be added in the next update-->
+      <!-- <section class="section bg-gray-100">
         <div class="range justify-content-xl-between">
           <div class="cell-xl-6 align-self-center container">
             <div class="row">
               <div class="col-lg-9 cell-inner">
                 <div class="section-lg">
                   <h3 class="wow-outer"><span class="wow slideInDown">Contact Us</span></h3>
-                  <!-- RD Mailform-->
+                   RD Mailform
                   <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="#">
                     <div class="row row-10">
                       <div class="col-md-6 wow-outer">
@@ -370,7 +405,7 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d985.9503845395611!2d4.466552900049807!3d8.710387822744597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5a09414d7b223d4!2sKwara%20State%20University%2C%20Malete!5e0!3m2!1sen!2sng!4v1567876668614!5m2!1sen!2sng" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="section section-sm">
         <div class="container">

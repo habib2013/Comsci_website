@@ -112,18 +112,25 @@
                   </div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-              
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/">Home</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">About Us</a>
+                  <li class="rd-nav-item"><a href="/" class="rd-nav-link" ><b>HOME</b></a>
                       <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{ route('about') }}">About us</a></li>
-                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Undergraduate research</a></li>
-                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">Postgraduate research</a></li>
-                          </ul>
+  
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="academics.html">STAFF</a>
+                  
+                    <li class="rd-nav-item"><a href="/about" class="rd-nav-link" ><b>ABOUT US</b></a>
+                      <!-- RD Navbar Dropdown-->
+  
+                    </li>
+
+
+                    <li class="rd-nav-item"><a href="/showlist" class="rd-nav-link" ><b>OUR COURSES</b></a>
+                      <!-- RD Navbar Dropdown-->
+  
+                    </li>
+
+                    <li class="rd-nav-item"><a href="#" class="rd-nav-link" ><b>STAFF</b></a>
+                      <!-- RD Navbar Dropdown-->
+  
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/teaching">Teaching staff</a></li>
@@ -131,19 +138,14 @@
                   
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">research</a>
+                
+                    <li class="rd-nav-item"><a href="#" class="rd-nav-link" ><b>NEWS & EVENTS</b></a>
+                      <!-- RD Navbar Dropdown-->
+  
+                    
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-blog.html">People</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="sidebar-blog.html">Research interest</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-blog-post.html">Undergraduate research</a></li>
-                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-blog-post.html">Scholarships</a></li>
-                      </ul>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">News and events</a>
-                      <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">Calendar and Colloquia</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">Examination updates</a></li>
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="masonry-gallery.html">Media</a></li>
                        
                       </ul>
